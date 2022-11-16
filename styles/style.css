@@ -1,14 +1,171 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-size: 16px;
+}
+.hidden {
+    display: none;
 }
 
 body {
-    background-color: bisque;
+    background-color: white;
 }
 
 header {
-    height: 500px;
-    background-color: black;
+    display: flex;
+    height: 520px;
+    background: linear-gradient(270deg, #261570, #6b39fc);
+    background-size: 200% 200%;
+    flex-direction: column;
+    transition: 1s;
+}
+header:hover {
+    background-position: 100% 100%;
+}
+header img {
+    width: 40px;
+}
+header button {
+    height: 40px;
+    width: auto;
+    padding: 0 20px;
+    border: 0px;
+    border-radius: 10px;
+    margin-left: auto;
+}
+header div {
+    display: flex;
+    align-items: center;
+}
+
+.homebar {
+    height: 80px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    color: white;
+}
+
+.title h1 {
+    font-size: 8rem;
+    font-weight: bold;
+    cursor: default;
+}
+.title p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-family: sans-serif;
+    cursor: default;
+}
+.title img {
+    width: 10rem;
+    height: 10rem;
+    margin-right: 1rem;
+}
+@media screen and (max-width: 700px) {
+    .title h1 {
+        font-size: 5.5rem;
+    }
+    .title img {
+        width: 7.5rem;
+        height: 7.5rem;
+        margin-right: 0rem;
+    }
+}
+
+.page-container {
+    display: flex;
+    justify-content: center;
+}
+page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+page h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: black;
+    margin-top: 7rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem 0rem;
+    margin-bottom: 8rem;
+}
+@media screen and (min-width: 1000px) {
+    .container {
+        width: 1000px;
+    }
+}
+
+input[name="company"] {
+    width: 100%;
+    height: 3rem;
+    border: 2px solid black;
+    border-right: 0px;
+    font-size: 1.5rem;
+    padding: 10px;
+    transition: 0.25s ease;
+}
+input[name="company"]:hover {
+    background-color: #6b39fc;
+    color: white;
+    border: 0px;
+}
+input[name="company"]:focus {
+    background-color: #6b39fc;
+    color: white;
+    border: 0px;
+    outline: none;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6b39fc;
+    color: white;
+    width: 5rem;
+    height: 3rem;
+
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    background-color: #a181fd;
+    width: 100%;
+}
+
+.section2 h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-top: 2rem;
+    color: white;
+    border: 5px solid white;
+    padding: 1rem;
 }
